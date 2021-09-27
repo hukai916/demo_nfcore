@@ -1,6 +1,6 @@
 # Setup nf-core environment
 
-## Step1: create new conda env: demo_nfcore
+## Step0: create new conda env: demo_nfcore
 conda create --name demo_nfcore
 conda activate demo_nfcore
 
@@ -12,10 +12,14 @@ which nextflow
 conda install -c bioconda nf-core
 
 ## Step3: initialize pipeline template
-nf-core create
--- Workflow Name: geotofastq
--- Description: Given GEO ID, retrieve sample sheet, download fastq, and perform FastQC, cutadapt and finnally generate a multiQC report.
+nf-core create <br>
+-- Workflow Name: geotofastq <br>
+-- Description: Given GEO ID, retrieve sample sheet, download fastq, and perform FastQC, cutadapt and finnally generate a multiQC report. <br>
 -- Auther: your name
+
+cd /Users/kaihu/GitHub/demo_nfcore/nf-core-geotofastq
+git remote add origin git@github.com:USERNAME/REPO_NAME.git
+git push --all origin
 
 ## References:
 1.  Install Nextflow:
